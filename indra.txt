@@ -1,0 +1,275 @@
+Plano de Testes - Funcionalidade "Realizar Compra" (Produto: Vestido Casual)
+Objetivo do Plano de Testes
+O objetivo deste plano de testes é definir as atividades necessárias para garantir que a funcionalidade de "Realizar Compra" de um vestido casual funcione conforme os requisitos estabelecidos, cobrindo os principais cenários de uso, desempenho e segurança. O planejamento contemplará diferentes tipos de testes e cenários, utilizando dados fictícios.
+
+1. Escopo do Teste
+Funcionalidade: "Realizar Compra" (Produto: Vestido Casual)
+Plataforma: Website e Mobile App
+Módulos envolvidos:
+Página de Produto
+Carrinho de Compras
+Pagamento
+Confirmação de Pedido
+Notificações (Email/SMS)
+2. Requisitos de Teste
+Os testes cobrirão as seguintes funcionalidades:
+
+Seleção de produto (Vestido Casual) com variação de tamanho e cor.
+Adição ao carrinho e verificação dos detalhes (nome, preço, quantidade, etc.).
+Aplicação de cupons de desconto (caso aplicável).
+Finalização da compra com diferentes métodos de pagamento (cartão de crédito, boleto, PIX).
+Verificação de confirmação de pedido e envio de email/SMS.
+Testes de usabilidade e acessibilidade.
+3. Critérios de Aceitação
+Para que o teste seja considerado bem-sucedido:
+
+O produto deve ser corretamente adicionado ao carrinho.
+O preço deve refletir corretamente as variações de tamanho/cor e a aplicação de cupons ou descontos.
+O pagamento deve ser processado sem erros e um número de confirmação de pedido gerado.
+O usuário deve receber notificações de confirmação da compra.
+4. Cenários de Teste
+Aqui estão os principais cenários de teste que serão executados.
+
+Cenários Funcionais
+Seleção de Produto (Vestido Casual):
+
+Selecionar diferentes tamanhos e cores (P, M, G; Preto, Vermelho, Azul).
+Validar a disponibilidade e as mensagens de "Produto em estoque" ou "Produto esgotado".
+Adicionar ao Carrinho:
+
+Adicionar um produto ao carrinho e validar:
+Nome do produto: "Vestido Casual"
+Preço correto: R$ 199,99
+Quantidade e subtotal.
+Alterar Quantidade no Carrinho:
+
+Aumentar e diminuir a quantidade no carrinho.
+Validar se o subtotal é atualizado corretamente.
+Aplicação de Cupom de Desconto:
+
+Usar cupom de desconto "CASUAL20" (20% off) e verificar:
+Se o desconto é aplicado corretamente ao subtotal.
+Cupom expirado ou inválido.
+Formas de Pagamento:
+
+Testar as seguintes opções:
+Cartão de crédito (bandeiras diferentes, dados válidos e inválidos).
+Pagamento por PIX.
+Boleto bancário (verificação da geração do boleto).
+Finalização do Pedido:
+
+Finalizar compra e verificar:
+Se o pedido é processado corretamente.
+Se o email de confirmação é recebido.
+Verificar número de pedido e link para rastreamento.
+Cancelar Pedido:
+
+Tentar cancelar um pedido após a compra e verificar a política de cancelamento e status de reembolso.
+Cenários Não Funcionais
+Teste de Desempenho:
+
+Medir o tempo de carregamento da página do produto e do carrinho.
+Simular 1000 usuários simultâneos tentando realizar a compra e validar o tempo de resposta.
+Teste de Segurança:
+
+Verificar se os dados de pagamento estão sendo enviados de forma segura (HTTPS).
+Testar diferentes tipos de ataques como SQL Injection ao preencher o formulário de pagamento.
+Teste de Acessibilidade:
+
+Verificar a funcionalidade de "Realizar Compra" com leitor de tela.
+Certificar-se de que todos os elementos possuem labels e estão acessíveis via teclado.
+5. Ambiente de Teste
+Ambientes: Ambiente de desenvolvimento (DEV) e homologação (HOMO).
+Navegadores: Chrome, Firefox, Safari.
+Dispositivos móveis: iOS (iPhone 12), Android (Samsung Galaxy S21).
+6. Dados de Teste (Exemplo)
+Produto:
+Nome: Vestido Casual
+Cores: Preto, Vermelho, Azul
+Tamanhos: P, M, G
+Preço: R$ 199,99
+Cliente:
+Nome: Carla Souza
+Email: carla.souza@teste.com
+Endereço: Rua Afrânio Peixoto, 123, SP
+CEP: 02060-050
+Cartão de Crédito (Exemplo):
+Número: 4111 1111 1111 1111
+Validade: 12/2026
+CVV: 123
+Cupom:
+"CASUAL20" - 20% de desconto
+7. Critérios de Saída
+Os testes serão considerados completos quando:
+
+Todos os cenários críticos forem validados.
+Não houver bugs de prioridade alta ou crítica.
+Os bugs encontrados forem documentados e reportados para correção.
+8. Riscos
+Problemas com a integração de métodos de pagamento.
+Inconsistências na aplicação de cupons ou descontos.
+Instabilidade em picos de acesso (Teste de Carga).
+9. Ferramentas de Teste
+Gerenciamento de Testes: Jira, TestRail
+Automação: Cypress (para teste funcional), JMeter (para teste de carga)
+Comunicação: Slack, Email
+5) Modelagem/Especificação de Casos de Teste
+a) Caso de Teste do Fluxo Principal (Realizar Compras, do tipo Vestido Casual)
+Título: CT001 - Fluxo Principal de Compra de Vestido Casual
+
+Objetivo: Validar o fluxo de compra completo de um vestido casual do início ao fim, desde a seleção do produto até a finalização do pagamento.
+
+Pré-condições:
+
+O usuário está logado no sistema.
+O produto "Vestido Casual" está disponível em estoque.
+Passos:
+
+Navegar até a página de categoria "Vestidos".
+Selecionar o produto "Vestido Casual".
+Escolher tamanho e cor disponíveis.
+Adicionar o produto ao carrinho.
+Ir para o carrinho e verificar detalhes (nome do produto, quantidade, preço).
+Clicar em "Finalizar Compra".
+Escolher a forma de pagamento (ex: cartão de crédito).
+Inserir dados de pagamento válidos.
+Clicar em "Confirmar Compra".
+Resultado Esperado:
+
+A compra deve ser finalizada com sucesso.
+O sistema deve gerar um número de pedido.
+O usuário deve receber um email de confirmação.
+b) Caso de Teste de um Fluxo Alternativo
+Título: CT002 - Aplicação de Cupom de Desconto no Carrinho
+
+Objetivo: Validar se o cupom de desconto é aplicado corretamente durante o processo de compra.
+
+Pré-condições:
+
+O usuário está logado no sistema.
+O produto "Vestido Casual" está disponível em estoque.
+O cupom "DESCONTO10" está ativo.
+Passos:
+
+Navegar até a página de categoria "Vestidos".
+Selecionar o produto "Vestido Casual".
+Escolher tamanho e cor disponíveis.
+Adicionar o produto ao carrinho.
+Ir para o carrinho e verificar detalhes (nome do produto, quantidade, preço).
+Inserir o cupom "DESCONTO10".
+Clicar em "Aplicar Cupom".
+Verificar se o desconto foi aplicado.
+Finalizar a compra normalmente.
+Resultado Esperado:
+
+O desconto de 10% deve ser aplicado corretamente ao total do pedido.
+O processo de finalização da compra deve continuar normalmente após a aplicação do cupom.
+c) Caso de Teste de um Fluxo de Exceção
+Título: CT003 - Falha no Pagamento com Cartão de Crédito
+
+Objetivo: Validar o comportamento do sistema ao inserir dados de cartão de crédito inválidos.
+
+Pré-condições:
+
+O usuário está logado no sistema.
+O produto "Vestido Casual" está disponível em estoque.
+Passos:
+
+Navegar até a página de categoria "Vestidos".
+Selecionar o produto "Vestido Casual".
+Escolher tamanho e cor disponíveis.
+Adicionar o produto ao carrinho.
+Ir para o carrinho e verificar detalhes (nome do produto, quantidade, preço).
+Clicar em "Finalizar Compra".
+Escolher a forma de pagamento (ex: cartão de crédito).
+Inserir dados de pagamento inválidos (ex: número de cartão incorreto).
+Clicar em "Confirmar Compra".
+Resultado Esperado:
+
+O sistema deve exibir uma mensagem de erro, informando que os dados de pagamento são inválidos.
+A compra não deve ser finalizada.
+O usuário deve ter a opção de corrigir os dados ou tentar outro método de pagamento.
+6) Gerenciamento/Monitoramento dos Testes
+a) Bug de Implementação (Implementation Error)
+Título: BUG001 - Erro ao aplicar cupom de desconto
+
+Descrição: O sistema não aplica o desconto corretamente ao inserir o cupom "DESCONTO10", mesmo quando válido.
+
+Causa Provável: Erro no cálculo de desconto no backend.
+
+Solução Sugerida: Revisar a lógica de aplicação de cupons no código de backend.
+
+b) Bug de Arquitetura (Architecture Error)
+Título: BUG002 - Lentidão ao carregar o carrinho com muitos produtos
+
+Descrição: Ao adicionar mais de 10 produtos no carrinho, o tempo de carregamento da página aumenta significativamente.
+
+Causa Provável: Problema de performance relacionado à arquitetura de dados.
+
+Solução Sugerida: Otimizar o carregamento e manipulação de dados no carrinho.
+
+c) Bug de Requisitos (Requirement Error)
+Título: BUG003 - Pagamento via PIX não disponível
+
+Descrição: O sistema não oferece a opção de pagamento via PIX, embora os requisitos do projeto indiquem que essa funcionalidade deveria estar implementada.
+
+Causa Provável: O requisito não foi corretamente implementado.
+
+Solução Sugerida: Verificar se o módulo de pagamento via PIX foi desenvolvido e integrado ao sistema.
+
+7) Gerenciamento/Monitoramento dos Testes - Criticidade dos Bugs
+a) Bug Blocker
+Título: BUG004 - Sistema trava na finalização de compra
+
+Descrição: Ao tentar finalizar a compra, o sistema trava e não processa o pedido.
+
+Criticidade: Blocker
+
+Impacto: O usuário não consegue finalizar a compra, impedindo a funcionalidade principal do sistema.
+
+b) Bug Alta (High)
+Título: BUG005 - Erro no cálculo de frete
+
+Descrição: O valor do frete é calculado incorretamente para determinadas regiões.
+
+Criticidade: Alta
+
+Impacto: O erro pode causar prejuízos financeiros e insatisfação do cliente.
+
+c) Bug Média (Medium)
+Título: BUG006 - Imagem do produto não carrega
+
+Descrição: Algumas imagens dos produtos não são exibidas na página de detalhes.
+
+Criticidade: Média
+
+Impacto: A experiência do usuário é prejudicada, mas não impede a compra.
+
+d) Bug Baixa (Low)
+Título: BUG007 - Pequeno desalinhamento de botão no layout mobile
+
+Descrição: O botão "Finalizar Compra" está ligeiramente desalinhado no layout mobile.
+
+Criticidade: Baixa
+
+Impacto: Problema estético que não afeta a funcionalidade do sistema.
+
+8) Estratégia de Testes para Sprint com Tempo Reduzido
+Cenário: O tempo de execução dos testes foi reduzido de 48 horas para 34 horas devido ao atraso no desenvolvimento. Abaixo está a estratégia que garante a melhor entrega possível.
+
+Prioridade de Testes:
+Testes Funcionais Críticos (16 horas):
+
+Executar os 20 casos de testes funcionais já criados, priorizando os casos do fluxo principal de "Realizar Compra" e os casos de exceção mais críticos.
+O foco deve ser nas funcionalidades que afetam diretamente o core do negócio, como o processo de pagamento e finalização de compra.
+Testes Exploratórios (12 horas):
+
+Utilizar as 12 horas para os checklists de validação baseados em testes exploratórios.
+Executar testes exploratórios nas áreas mais sensíveis ao cliente, como usabilidade e fluxo de compra.
+Regressão Mínima (6 horas):
+
+Em vez de realizar a regressão completa (20 horas), executar uma regressão mínima focada nas funcionalidades críticas do sistema.
+Cobrir os principais módulos: login, carrinho, pagamento e finalização.
+Automação de Smoke Tests:
+
+Paralelamente, automatizar os testes de smoke (sanity checks) que validam o funcionamento básico do sistema.
