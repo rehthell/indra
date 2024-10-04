@@ -1,1 +1,1 @@
-Bem-vindo ao repositório de Testes Manuais. 
+Repositório de Testes Manuais
