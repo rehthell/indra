@@ -1,0 +1,136 @@
+Caso de Teste (vários casos de teste)
+
+1) Itens de cobertura de teste (Cenário de teste)
+
+Identificador único (id)
+
+#19956
+
+Descrição (o que vai ser testado)
+
+- Busca de itens
+- Carrinho de compras 
+- Realizar Compras do Vestido Casual
+- Realizar Compras do Sapato de Festa
+- Excluir o outro item 
+
+Prioridade (Baixa, média, alta(começa pelo alta))
+
+- Alta
+
+Rastreabilidade(tem algum documento relacionado a esse caso de teste?)
+
+- Diagrama de Sequência #1223
+
+2) Casos de Teste (derivações do cenário)
+
+Identificador único (id)
+
+- #1
+
+Objetivo (o que vai validar)
+
+- Validar a Busca de itens
+
+Prioridade(Baixa(quando é difícil de acontecer), média, alta(começa pelo alta))
+
+- Alta
+
+Rastreabilidade (tem algum documento relacionado a esse caso de teste? só pra saber de onde foi originado esse caso de teste)
+
+- Diagrama de Sequência #1223
+
+Condições prévias (o que você precisa para testar esse caso de teste)
+
+- Cliente acessar a versão Web
+- Vestido Casual estar cadastrado
+- Sapato de Festa estar cadastrado
+
+Entradas (dados de teste)
+
+- url do site
+
+
+Resultados esperados (o que se espera acontecer num caso de sucesso)
+
+- Ver uma mensagem de sucesso: "Seu item foi adicionado ao carrinho"
+
+Resultados atuais e resultado do teste (o que foi retornado após o teste e evidências)
+
+- Logs da aplicação precisam ser armazenados
+
+3) Casos de Teste (derivações do cenário)
+
+Identificador único (id)
+
+- #2
+
+Objetivo (o que vai validar)
+
+- Validar Carrinho de compras
+
+Prioridade(Baixa(quando é difícil de acontecer), média, alta(começa pelo alta))
+
+- Alta
+
+Rastreabilidade (tem algum documento relacionado a esse caso de teste? só pra saber de onde foi originado esse caso de teste)
+
+- Diagrama de Sequência #1223
+
+Condições prévias (o que você precisa para testar esse caso de teste)
+
+- Vestido Casual estar cadastrado
+- Sapato de Festa estar cadastrado
+- botão para visualizar carrinho de compra
+
+
+- botão para exclusão de item no carrinho de compra
+
+Entradas (dados de teste)
+
+- url do site
+
+
+Resultados esperados (o que se espera acontecer num caso de sucesso)
+
+- Ver os itens adicionados 
+
+Resultados atuais e resultado do teste (o que foi retornado após o teste e evidências)
+
+- Logs da aplicação precisam ser armazenados
+
+4) Casos de Teste (derivações do cenário)
+
+Identificador único (id)
+
+- #3
+
+Objetivo (o que vai validar)
+
+- Validar Exclusão de Item
+
+Prioridade(Baixa(quando é difícil de acontecer), média, alta(começa pelo alta))
+
+- Alta
+
+Rastreabilidade (tem algum documento relacionado a esse caso de teste? só pra saber de onde foi originado esse caso de teste)
+
+- Diagrama de Sequência #1223
+
+Condições prévias (o que você precisa para testar esse caso de teste)
+
+- botão para exclusão de item no carrinho de compra
+
+Entradas (dados de teste)
+
+- url do site
+
+
+Resultados esperados (o que se espera acontecer num caso de sucesso)
+
+- Ver uma mensagem de sucesso: "Seu item foi removido ao carrinho"
+- Caso, seja mais de 1 do mesmo item: alterar o contador do item 
+
+Resultados atuais e resultado do teste (o que foi retornado após o teste e evidências)
+
+- Logs da aplicação precisam ser armazenados
