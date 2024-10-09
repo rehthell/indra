@@ -1,0 +1,142 @@
+Procedimento de Teste (passo a passo)
+
+1) Itens de cobertura de teste
+
+Identificador único(id)
+
+#1
+
+Descrição (qual testes vai descrever o passo a passo)
+
+- Testes de realização de Busca de item na versão Web
+
+2) Procedimento de Teste (o que vai validar e sua prioridade)
+
+Objetivo e Prioridade
+
+- Validar a busca de itens
+- Alta (baixa, média, alta)
+
+Duração (tempo que leva)
+
+- 30 minutos
+
+Procedimentos iniciais(tem algo que precisa fazer antes de testar?)
+
+- Conectar a internet
+- Abrir um browser permitido (Edge ou Chrome)
+- Cliente acessar a Loja web
+
+Relacionamento com outros procedimentos
+
+- N/A (tem algum procedimento que precede esse?)
+
+Procedimento (são Linhas):
+
+a) Passo
+
+#1
+
+b) Caso de Teste (colocar os id's)
+
+- #1-#1
+- #1-#2
+
+c) Atividade
+
+- Preencher o campos de busca
+
+d) Análise do resultado (o que você vai validar)
+
+- Valide que os resultados estão de acordo com o texto pesquisado
+
+e) Saída(o que você espera)
+
+- Os itens retornados estão de acordo com o texto pesquisado
+
+f) Resultado(resultado esperado)
+
+- Itens retornados devem estar de acordo com a pesquisa
+
+b) Passo
+
+#2
+
+b) Caso de Teste
+
+- #1-#1
+- #1-#2
+
+c) Atividade
+
+- Validar Carrinho de compras
+
+d) Análise do resultado
+
+- Valide que a tela exibe o ícone do Carrinho de compras
+- Validar o acesso aos itens do carrinho 
+
+e) Saída
+
+- Tela exibe o ícone do Carrinho de compras
+- Visualizar conteúdo do Carrinho de compras
+
+f) Resultado
+
+- Visualização do ícone
+- Visualização dos itens comprados
+
+c) Passo
+
+#3
+
+b) Caso de Teste
+
+- #1-#1
+- #1-#2
+
+c) Atividade
+
+- Validar Alteração de item
+
+d) Análise do resultado
+
+- Validar adição de outro item ao Carrinho
+
+e) Saída
+
+- Visualizar conteúdo novo adicionado ao Carrinho de compras
+
+f) Resultado
+
+- Visualização dos itens comprados
+
+#4
+
+d) Caso de Teste
+
+- #1-#1
+- #1-#2
+
+c) Atividade
+
+- Validar Exclusão de item
+
+d) Análise do resultado
+
+- Validar exclusão de item do Carrinho
+
+e) Saída
+
+- Visualizar apenas conteúdo dos itens não excluídos 
+
+f) Resultado
+
+- Visualização dos itens não excluídos 
+
+Parada e fechamento(o que fazer quando acaba o teste)
+
+- Saio do sistema se estiver logado
+- Fechar o browser
+
+
