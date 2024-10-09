@@ -1,0 +1,167 @@
+Plano de Testes
+
+1) Informações gerais
+
+Visão geral (o que o documento representa)
+
+Um plano de testes para clarificar a todos os envolvidos o que será testado.
+
+Identificador único (id)
+
+#1
+
+Organização responsável (nome da sua empresa)
+
+INDRA
+
+Aprovadores (quem vai aprovar)
+
+- Priscila Alves (CEO)
+- James Rodrigues (Tech Lead)
+
+Histórico de mudanças (sofreu alteração nas datas?)
+
+- 1/abril/2021 Criei o Plano
+- 2/abril/2021 Alterei os aprovadores
+
+Escopo geral (o que entra e não entra no plano - o que vai ser feito)
+
+- Projeto Web
+- Não está no escopo a API 
+- Não está no escopo o App Android e iOS
+
+Referências (documentos que auxiliam relacionados a este plano)
+
+- NÃO EXISTE
+
+Glossário de Termos (termos e seus significados)
+
+- API: Application Proggramming Interface
+
+2) Contexto do teste
+
+Projetos ou Sub-processos de Teste (alguma coisa que faz parte do sistema: desktop, mobile, web)
+
+- Projeto Web
+
+Item(ns) de teste (o que vai ser testado da aplicação)
+
+- Funcionalidade: Realizar Compra
+- Item: Vestido Casual
+
+Escopo do teste (quais os itens que serão criados e testados)
+
+Serão Testados: (CRUD de cada funcionalidade)
+- Login
+- Registro de Produto
+- Busca de Produto
+- Exclusão de Produto
+- Edição de Produto
+- Registro de Componente
+- Exclusão de Componente
+- Busca de Componente
+
+Não serão testados: (quais os itens que serão criados e não serão testados)
+- Registro de Usuário
+
+Premissas e restrições (regras de negócio para rodar o sistema)
+
+- Que haja ambientes para execução de várias versões do Projeto Web (P)
+- Termos ferramentas para testar apenas no Chrome e Edge (R)
+
+Stakeholders (patrocinadores)
+
+- Priscila Alves (CEO)
+
+3) Registro de risco de comunicação de teste (avaliar possíveis riscos e dar soluções para mitigar)
+
+Riscos do produto (algo que prejudique o desenvolvimento do produto)
+
+- Risco de ataques de segurança na tela de Login
+
+Riscos do projeto (algo que prejudique o desenvolvimento do projeto)
+
+- Rotatividade que tem sido alta na companhia INDRA.
+
+4) Estratégia de teste (o que vai testar)
+
+Teste de sub-processos
+
+- versão Web
+
+Entregáveis de teste (os artefatos que serão entregados)
+
+- Caso de Teste
+- Procedimento de Teste
+- Log de Teste
+- Plano de Teste
+
+Técnicas de design de teste(técnicas necessárias para testar)
+
+- Tabela de Decisão
+- Partição de Equivalência
+
+Critérios de conclusão de teste(quando o projeto pode ser fechado? percentual + frase)
+
+- 100% dos incidentes com prioridade média e alta, foram corrigidos e fechados
+
+Métricas a serem coletadas (percentual de defeitos)
+
+- % de defeitos corrigidos e fechados
+
+Requisitos de dados de teste (quais dados são necessários pra realizar os testes)
+
+- Lista de produtos já cadastrada na Loja
+- 5 usuários já cadastrados na Loja
+
+Requisitos do ambiente de teste (quais configurações são necessários pra realizar os testes)
+
+- Servidores capazes de suportar o uso por 1000 usuários simultâneos
+
+Novos testes e testes de regressão(novos: são testes nunca realizados, regressão: são testes já realizados)
+
+- Novos testes a cada nova entrega
+- Testes regressivos antes da entrega para a próxima fase
+
+Critérios de suspensão e retomada(impeditivos e suas soluções)
+
+- API da Loja ficar fora do ar por mais de 3 dias (Suspensão)
+- API da Loja retornou a operação e está no ar por mais de 24 horas (Retomada)
+
+Desvios da Estratégia de Teste Corporativa(a empresa segue como um todo e coloca um desvio para o projeto)
+
+- Nesse projeto, dado o número reduzido de Testadores, será necessário contar com a ajuda de Desenvolvedores na execução dos casos de teste
+
+5) Atividades e estimativas(todas as atividades que serão realizadas e suas estimativas+responsáveis)
+
+Atividades de teste e estimativas 
+
+- Revisão de documentos, Maria e 8 dias
+- Elaboração de casos de teste, Ana e 12 dias
+- Automação de testes, João e 15 dias
+
+6) Equipe(função da pessoa e suas responsabilidades)
+
+Funções, atividades e responsabilidades
+
+Analista de Testes, Ana, Criar casos de teste
+Testador, Maria, Executar casos de teste
+Automatizador de Testes, João, Cria scripts de teste Web
+
+Necessidades de contratação(quais compras são necessárias)
+
+- Intellij IDE Versão Paga
+- BrowserStack para testes na nuvem
+- Especialista em Testes de performance
+
+Necessidades de treinamento(precisa treinar o pessoal?)
+
+- Treinamento de automação de testes com Selenium WebDriver em Java
+
+7) Cronograma(datas das estapas)
+
+Cronograma
+
+- 1 de abril ~ 8 de abril: Revisão de documentos
+- 1 de abril ~ 12 de abril: Criar casos de teste
+- 12 de abril ~ 27 de abril: Automatizar testes
